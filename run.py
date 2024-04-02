@@ -3,8 +3,21 @@ from studentAbout import StudentAbout
 
 def user_parameter():
     print("Welcome Automation")
-    student_name = input("Enter Student Name: ")
-    student_surname = input("Enter Student Surname: ")
+    student_name = None
+    student_surname = None
+    while True:
+        student_name = input("Enter Student Name: ")
+        if student_name.isalpha():
+            break
+        else:
+            print(f"{student_name} is invalid. Please use only letters.")
+
+    while True:
+        student_surname = input("Enter Student Surname: ")
+        if student_surname.isalpha():
+            break
+        else:
+            print(f"{student_surname} is invalid. Please use only letters.")
     
     print("Select a lesson : ")
     student_lesson = [
@@ -74,3 +87,5 @@ def main():
         else:
             print("Invalid choice. Please enter 1, 2, or 3.")
 
+if __name__ == "__main__":
+    main()
