@@ -52,3 +52,11 @@ def student_about_file_path_list(student_about_file_path_list):
             print("Student Lesson Statu:", row[5])
             print()
 
+def main():
+    studentabout_file_path = "studentabout.csv"
+    while True:
+        print("What do you want to do?")
+        print("1. Add a student about")
+        print("2. List student about")
+        print("3. Exit")
+
