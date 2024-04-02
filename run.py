@@ -60,3 +60,17 @@ def main():
         print("2. List student about")
         print("3. Exit")
 
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            studentabout = user_parameter()
+            save_to_csv(studentabout, studentabout_file_path)
+            print("New student about added successfully!")
+        elif choice == "2":
+            student_about_file_path_list(studentabout_file_path)
+        elif choice == "3":
+            print("Exiting program.")
+            break
+        else:
+            print("Invalid choice. Please enter 1, 2, or 3.")
+
