@@ -23,3 +23,13 @@ def user_parameter():
     student_point_two = int(input("Enter Quiz Two Point : "))
 
     if((student_point_one+student_point_two)/2>40):
+        student_statu = "Passed"
+    else:
+        student_statu = "Stayed"    
+
+    if selected_index in range(len(student_lesson)):
+        selected_lesson = student_lesson[selected_index]
+        return StudentAbout(name=student_name, surname=student_surname, lesson=selected_lesson, point_one=student_point_one, point_two=student_point_two, statu=student_statu)
+    else:
+        print("Invalid lesson. Please try again!")
+
