@@ -33,3 +33,9 @@ def user_parameter():
     else:
         print("Invalid lesson. Please try again!")
 
+def save_to_csv(studentabout: StudentAbout, student_file_path):
+    print(f"Saving User Parameter : {studentabout} to {student_file_path}")
+    with open(student_file_path, "a", newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow([studentabout.name, studentabout.surname, studentabout.lesson, studentabout.point_one, studentabout.point_two, studentabout.statu])
+
