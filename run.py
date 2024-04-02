@@ -39,3 +39,16 @@ def save_to_csv(studentabout: StudentAbout, student_file_path):
         writer = csv.writer(csvfile)
         writer.writerow([studentabout.name, studentabout.surname, studentabout.lesson, studentabout.point_one, studentabout.point_two, studentabout.statu])
 
+def student_about_file_path_list(student_about_file_path_list):
+    print("Listing Student About:")
+    with open(student_about_file_path_list, "r") as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            print("Student Name:", row[0])
+            print("Student Surname:", row[1])
+            print("Student Lesson:", row[2])
+            print("Student Quiz Point One:", row[3])
+            print("Student Quiz Point Two:", row[4])
+            print("Student Lesson Statu:", row[5])
+            print()
+
