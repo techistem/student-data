@@ -1,5 +1,5 @@
 import csv
-from studentAbout import StudentAbout
+from studentData import studentData
 
 def user_parameter():
     print("Welcome Automation")
@@ -32,55 +32,55 @@ def user_parameter():
     value_range = f"[1 - {len(student_lesson)}]"
     selected_index = int(input(f"Enter a lesson number {value_range}: ")) - 1
     
-    student_point_one = int(input("Enter Quiz One Point: "))
-    student_point_two = int(input("Enter Quiz Two Point : "))
+    student_exam_score_one = int(input("Enter Exam Score One : "))
+    student_exam_score_two = int(input("Enter Exam Score Two : "))
 
-    if((student_point_one+student_point_two)/2>40):
+    if((student_exam_score_one +student_exam_score_two)/2>40):
         student_statu = "Passed"
     else:
-        student_statu = "Stayed"    
+        student_statu = "Fail"    
 
     if selected_index in range(len(student_lesson)):
         selected_lesson = student_lesson[selected_index]
-        return StudentAbout(name=student_name, surname=student_surname, lesson=selected_lesson, point_one=student_point_one, point_two=student_point_two, statu=student_statu)
+        return StudentData(name=student_name, surname=student_surname, lesson=selected_lesson, score_one=student_score_one, score_two=student_score_two, statu=student_statu)
     else:
         print("Invalid lesson. Please try again!")
 
-def save_to_csv(studentabout: StudentAbout, student_file_path):
-    print(f"Saving User Parameter : {studentabout} to {student_file_path}")
+def save_to_csv(studentdata: StudentData, student_file_path):
+    print(f"Saving User Parameter : {studentdata} to {student_file_path}")
     with open(student_file_path, "a", newline='') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow([studentabout.name, studentabout.surname, studentabout.lesson, studentabout.point_one, studentabout.point_two, studentabout.statu])
+        writer.writerow([studentdata.name, studentdata.surname, studentdata.lesson, studentdata.score_one, studentdata.score_two, studentdata.statu])
 
-def student_about_file_path_list(student_about_file_path_list):
-    print("Listing Student About:")
-    with open(student_about_file_path_list, "r") as csvfile:
+def student_data_file_path_list(student_data_file_path_list):
+    print("Listing Student Data:")
+    with open(student_data_file_path_list, "r") as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
             print("Student Name:", row[0])
             print("Student Surname:", row[1])
             print("Student Lesson:", row[2])
-            print("Student Quiz Point One:", row[3])
-            print("Student Quiz Point Two:", row[4])
+            print("Student Exam Score One:", row[3])
+            print("Student Exam Score Two:", row[4])
             print("Student Lesson Statu:", row[5])
             print()
 
 def main():
-    studentabout_file_path = "studentabout.csv"
+    studentdata_file_path = "studentdata.csv"
     while True:
         print("What do you want to do?")
-        print("1. Add a student about")
-        print("2. List student about")
+        print("1. Add a student data")
+        print("2. List student data")
         print("3. Exit")
 
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            studentabout = user_parameter()
-            save_to_csv(studentabout, studentabout_file_path)
-            print("New student about added successfully!")
+            studentdata = user_parameter()
+            save_to_csv(studentdata, studentdata_file_path)
+            print("New student data added successfully!")
         elif choice == "2":
-            student_about_file_path_list(studentabout_file_path)
+            student_data_file_path_list(studentdata_file_path)
         elif choice == "3":
             print("Exiting program.")
             break
