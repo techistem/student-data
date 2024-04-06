@@ -36,13 +36,13 @@ def user_parameter():
     student_exam_score_two = int(input("Enter Exam Score Two : "))
 
     if((student_exam_score_one +student_exam_score_two)/2>40):
-        student_statu = "Passed"
+        student_status = "Passed"
     else:
-        student_statu = "Fail"    
+        student_status = "Fail"    
 
     if selected_index in range(len(student_lesson)):
         selected_lesson = student_lesson[selected_index]
-        return StudentData(name=student_name, surname=student_surname, lesson=selected_lesson, score_one=student_score_one, score_two=student_score_two, statu=student_statu)
+        return StudentData(name=student_name, surname=student_surname, lesson=selected_lesson, score_one=student_score_one, score_two=student_score_two, status=student_status)
     else:
         print("Invalid lesson. Please try again!")
 
@@ -50,7 +50,7 @@ def save_to_csv(studentdata: StudentData, student_file_path):
     print(f"Saving User Parameter : {studentdata} to {student_file_path}")
     with open(student_file_path, "a", newline='') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow([studentdata.name, studentdata.surname, studentdata.lesson, studentdata.score_one, studentdata.score_two, studentdata.statu])
+        writer.writerow([studentdata.name, studentdata.surname, studentdata.lesson, studentdata.score_one, studentdata.score_two, studentdata.status])
 
 def student_data_file_path_list(student_data_file_path_list):
     print("Listing Student Data:")
@@ -62,7 +62,7 @@ def student_data_file_path_list(student_data_file_path_list):
             print("Student Lesson:", row[2])
             print("Student Exam Score One:", row[3])
             print("Student Exam Score Two:", row[4])
-            print("Student Lesson Statu:", row[5])
+            print("Student Lesson Status:", row[5])
             print()
 
 def main():
