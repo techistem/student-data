@@ -67,7 +67,7 @@ def user_parameter():
             student_exam_score_one = int(student_exam_score_one)
             break
         else:
-            print(f"{student_exam_score_one} is invalid. Please use only letters.")
+            print(f"{student_exam_score_one} is invalid. Please use only numbers.")
 
     while True:
         student_exam_score_two = input("Enter Exam Score Two:")
@@ -75,7 +75,7 @@ def user_parameter():
             student_exam_score_two = int(student_exam_score_two)
             break
         else:
-            print(f"{student_exam_score_two} is invalid. Please use only letters.")
+            print(f"{student_exam_score_two} is invalid. Please use only numbers.")
 
     if(student_exam_score_one +student_exam_score_two) / 2 > 40:
         student_status = "Passed"
