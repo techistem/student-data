@@ -53,7 +53,7 @@ To achieve the above, the site will:
 I created the following flow chart using [lucid charts] (https://www.lucidchart.com/) to outline the necessary steps for programming
 the student data recording system.
 
-![Student Data Logic Flowchart] (screenshots/student-data-flowchart.png)          
+![Student Data Logic Flowchart](screenshots/student-data-flowchart.png)          
 
 
 
