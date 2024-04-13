@@ -9,7 +9,7 @@ It is built using Python and runs through the Code institute mock terminal on He
 
 Welcome to <a href="https://student-data-706119549c09.herokuapp.com/)" target="_blank" rel="noopener">Student Data</a>
 
-![Responsive design](docs/screenshots/student-data-welcome-screen.png)
+![Responsive design](screenshots/student-data-welcome-screen.png)
 
 
 ## **Table of Contents**
