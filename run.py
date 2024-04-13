@@ -12,6 +12,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('student-data')
 
 class StudentData():
+    """A class to represent student data."""
 
     def __init__(self, name, surname, lesson, score_one, score_two, status) -> None:
         self.name = name
@@ -22,6 +23,11 @@ class StudentData():
         self.status = status
 
 def user_parameter():
+    """Collects user input for student information and returns a StudentData object.
+
+    This function prompts the user to enter the student's name, surname, lesson, exam scores,
+    and calculates the student's status based on their average score."""
+
     print("Welcome Automation")
     student_name = None
     student_surname = None
@@ -89,12 +95,14 @@ def user_parameter():
         print("Invalid lesson. Please try again!")
 
 def save_to_sheet(studentdata):
+    """Saves student data to a Google Sheets worksheet.""""
     worksheet = SHEET.worksheet("studentData")
     worksheet.append_row([studentdata.name, studentdata.surname, studentdata.lesson, studentdata.score_one, studentdata.score_two, studentdata.status])
     print("New student data added successfully!")
 
 
 def student_data_gspread_list():
+    """Fetches and lists student data from a Google Sheets worksheet."""
     worksheet = SHEET.worksheet("studentData")
     rows = worksheet.get_all_values()
     print("Listing Student Data:")
@@ -108,6 +116,7 @@ def student_data_gspread_list():
         print()
 
 def main():
+    """This function provides a menu-driven interface for interacting with student data."""
     while True:
         print("What do you want to do?")
         print("1. Add a student data")
