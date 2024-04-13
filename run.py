@@ -27,17 +27,17 @@ def user_parameter():
     student_surname = None
     while True:
         student_name = input("Enter Student Name: ")
-        if student_name.isalpha():
+        if student_name.isalpha() and len(student_name) > 1:
             break
         else:
-            print(f"{student_name} is invalid. Please use only letters.")
+            print(f"{student_name} is invalid. Please use only letters and must be longer than 1 character.")
 
     while True:
         student_surname = input("Enter Student Surname: ")
-        if student_surname.isalpha():
+        if student_surname.isalpha() and len(student_surname) > 1:
             break
         else:
-            print(f"{student_surname} is invalid. Please use only letters.")
+            print(f"{student_surname} is invalid. Please use only letters and must be longer than 1 character..")
     
     print("Select a lesson : ")
     student_lesson = [
