@@ -95,7 +95,7 @@ def user_parameter():
         print("Invalid lesson. Please try again!")
 
 def save_to_sheet(studentdata):
-    """Saves student data to a Google Sheets worksheet.""""
+    """Saves student data to a Google Sheets worksheet."""
     worksheet = SHEET.worksheet("studentData")
     worksheet.append_row([studentdata.name, studentdata.surname, studentdata.lesson, studentdata.score_one, studentdata.score_two, studentdata.status])
     print("New student data added successfully!")
