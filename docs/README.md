@@ -164,6 +164,70 @@ For this project to function, I imported the following libraries:
 - gspread: Used for accessing Google Sheets API.
 - google-auth: Provides authentication credentials for accessing Google APIs.
 
+# **Deployment to Heroku**
+
+The project was deployed to [Heroku](https://www.heroku.com)
+
+1. _Log in to Heroku_ or create an account if required.
+2. _Click on the dashboard_ from the hamburger menu on the top right to be navigated to the apps page.
+3. _Click the new_ button on the top right of the page.
+4. _Select the "create new app"_ option.
+5. _Enter_ the app name. I named mine student-data (this has to be unique).
+6. _Once Heroku accepts the app name_ select your region.
+7. Click the purple _Create app button_ when you are ready to proceed.
+8. This will bring you to the project _Deploy_ tab. From here, navigate to the _settings tab_ and scroll down to the _Config Vars_ section.
+9. _Click_ the button labeled _Reveal_Config Vars_, _Enter_ the key as Port, the Value as 8000 and _Click the add button_.
+10. Scroll down to the _buildpacks section_ of the settings page, click the button labeled Add buildpack, select Python, and click _Save Changes_.
+11. _Repeat step 10_ but this time add node.js instead of python.
+    - Remember to keep the buildpacks in the correct order, Python first and Node second.
+12. _Scroll back to the top_ of the settings page, and navigate to the _Deploy_ tab.
+13. From the deploy tab select _Github as the deployment_ method.
+14. _Confirm_ you want to connect to GitHub.
+15. _Search_ for the repository name and _click the connect button_ next to the intended repository.
+16. From the bottom of the deploy page _select your preferred deployment type_ by following one of the steps below:
+    - Clicking either "Enable Automatic Deploys" for automatic deployment when you push updates to GitHub.
+    - Select the correct branch for deployment from the drop-down menu and click the "Deploy Branch" button for manual deployment.
+
+![Heroku Student Data](screenshots/heroku-student-data.png)
+
+## **Using Github & Gitpod**
+
+To deploy my command-line interface application, I had to use the 
+[Code Institute Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template),
+as this enables the application to be properly viewed on Heroku using a mock terminal.
+
+- Click the `Use This Template` button.
+- Add a repository name and brief description.
+- Click the `Create Repository from Template` to create your repository.
+- To create a Gitpod workspace you then need to click `Gitpod`, this can take a few minutes.
+- When you want to work on the project it is best to open the workspace from Gitpod (rather than Github) as this will open your previous 
+workspace rather than creating a new one. You should pin the workspace so that it isn't deleted.
+- Committing your work should be done often and should have clear/explanatory messages, use the following commands to make your commits:
+    - `git add .`: adds all modified files to a staging area
+    - `git commit -m "A message explaining your commit"`: commits all changes to a local repository.
+    - `git push`: pushes all your committed changes to your Github repository.
+
+*Forking the GitHub Repository*
+
+If you want to make changes to your repository without affecting it, you can make a copy of it by 'Forking' it. This ensures your original 
+repository remains unchanged.
+
+1. Find the relevant GitHub repository
+2. In the top right corner of the page, click the Fork button (under your account)
+3. Your repository has now been 'Forked' and you have a copy to work on
+
+*Cloning the GitHub Repository*
+
+Cloning your repository will allow you to download a local version of the repository to be worked on. Cloning can also be a great way
+to backup your work.
+
+1. Find the relevant GitHub repository
+2. Press the arrow on the Code button
+3. Copy the link that is shown in the drop-down
+4. Now open Gitpod & select the directory location where you would like the clone created
+5. In the terminal type 'git clone' & then paste the link you copied in GitHub
+6. Press enter and your local clone will be created.
+
 
 
 
