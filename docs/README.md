@@ -152,6 +152,12 @@ I have used several technologies that have enabled this design to work:
     - Used to store the 'Contacts' data used for the application.
 - [Pep8](https://pep8ci.herokuapp.com/)
     - Used to test my code for any issues or errors.
+
+# **Testing Phase**
+
+I have written my testing in a different file for both during-development and post-development called [TESTING.md](TESTING.md).
+
+
         
 
 
