@@ -85,17 +85,27 @@ Utilizes Google Sheets API for data storage and retrieval.
 
 Input validation ensures correct data entry, prompting users when invalid input is provided.
 
+![Validated Input](screenshots/Validated-Input.png)
+
 ### **Flexible Lesson Selection**
 
 Users can select from a list of predefined lessons: English, Science, Math, and History.
+
+![Flexible Lesson Selection](screenshots/lesson-section.png)
 
 ### **Feedback and Error Handling**
 
 The program provides feedback on successful data entry and error messages for invalid inputs.
 
+![Feedback and Error Handling](screenshots/feedback-error-handling.png)
+
 ### **Exit**
 
 Users can exit the program at any time.
+
+![Exit](screenshots/exitt.png)
+
+
 
 
 
