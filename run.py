@@ -29,7 +29,6 @@ def user_parameter():
     and calculates the student's status based on their average score."""
 
     print("Welcome Automation")
-    print("-------------------")
     student_name = None
     student_surname = None
     while True:
