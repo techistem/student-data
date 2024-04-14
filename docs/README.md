@@ -7,7 +7,7 @@ and have it all organized neatly in a Google Sheet.
 
 It is built using Python and runs through the Code institute mock terminal on Heroku.
 
-Welcome to <a href="https://student-data-706119549c09.herokuapp.com/)" target="_blank" rel="noopener">Student Data</a>
+Welcome to <a href="(https://student-data-706119549c09.herokuapp.com/)" target="_blank" rel="noopener">Student Data</a>
 
 ![Responsive design](screenshots/student-data-welcome-screen.png)
 
@@ -53,7 +53,17 @@ To achieve the above, the site will:
 I created the following flow chart using [lucid charts] (https://www.lucidchart.com/) to outline the necessary steps for programming
 the student data recording system.
 
-![Student Data Logic Flowchart](screenshots/student-data-flowchart.png)          
+![Student Data Logic Flowchart](screenshots/student-data-flowchart.png)  
+
+# **Features**
+
+The features included in this programme are listed in the main menu and they can be seen below:
+
+![Main Menu](screenshots/student-data-welcome-screen.png)
+
+
+
+
 
 
 
