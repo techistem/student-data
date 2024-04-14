@@ -10,14 +10,20 @@ I performed manual tests in this project as follows:
 
 Below are screenshots of the result I received from the Python linter for the `run.py` file:
 
-![run.py](screenshots/errors.pep8.png)
+![run.py](docs/screenshots/errors.pep8.png)
 
 After resolving all problems in the `run.py` file, no more errors were produced.
 
-![PEP8 No Errors](screenshots/noerrors.pep8.png)
+![PEP8 No Errors](docs/screenshots/noerrors.pep8.png)
 
 ## Browser Compatibility
 
+- Google Chrome
+- Microsoft Edge
+- Safari
+- Mozilla Firefox
+
+Appearance and functionality appear to be consistent throughout all browsers.
 
 
 
