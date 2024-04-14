@@ -228,7 +228,16 @@ to backup your work.
 5. In the terminal type 'git clone' & then paste the link you copied in GitHub
 6. Press enter and your local clone will be created.
 
+# **Cedits**
 
+- [Google Sheets API](https://developers.google.com/sheets/api/guides/concepts) Utilized for storing and retrieving student data.
+- [lucidchart.com](https://www.lucidchart.com/pages/) was used to create the programme flow chart "student-data-flowchart.png"
+- [Code Institute's](https://codeinstitute.net/full-stack-software-development-diploma/?nab=2) LMS (Learning Management System) 
+for teaching me Python to begin with.
+- [Code Institute's](https://codeinstitute.net/full-stack-software-development-diploma/?nab=2) LMS (Learning Management System) 
+for teaching me Python to begin with.
+- Peer-code-review channel in [Code Institute's](https://codeinstitute.net/full-stack-software-development-diploma/?nab=2) Slack community for helping me find bugs and issues.
+[Python tips book](https://book.pythontips.com/en/latest/) helped me gain knowledge about Python I otherwise would not have obtained.
 
 
         
