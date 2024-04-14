@@ -155,7 +155,7 @@ I have used several technologies that have enabled this design to work:
 
 # **Testing Phase**
 
-I have written my testing in a different file for both during-development and post-development called [TESTING.md](TESTING.md).
+I have written my testing in a different file for both during-development and post-development called [TESTING.md](../TESTING.md) .
 
 # **Libraries**
 

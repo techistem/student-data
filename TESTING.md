@@ -16,5 +16,9 @@ After resolving all problems in the `run.py` file, no more errors were produced.
 
 ![PEP8 No Errors](screenshots/noerrors.pep8.png)
 
+## Browser Compatibility
+
+
+
 
 
