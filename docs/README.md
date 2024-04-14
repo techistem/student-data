@@ -7,12 +7,12 @@ and have it all organized neatly in a Google Sheet.
 
 It is built using Python and runs through the Code institute mock terminal on Heroku.
 
-Welcome to <a href="(https://student-data-706119549c09.herokuapp.com/)" target="_blank" rel="noopener">Student Data</a>
+Welcome to <a href="https://student-data-706119549c09.herokuapp.com/" target="_blank" rel="noopener">Student Data</a>
 
 ![Responsive design](screenshots/student-data-welcome-screen.png)
 
 
-## **Planing Stage**
+# **Planing Stage**
 
 ## **_User Stories:_**
 
@@ -57,9 +57,46 @@ the student data recording system.
 
 # **Features**
 
+This Python program allows users to manage and record student data using Google Sheets.
 The features included in this programme are listed in the main menu and they can be seen below:
 
 ![Main Menu](screenshots/student-data-welcome-screen.png)
+
+## **Add student data:**
+
+When the user selects the add new student option, the program will be asked to enter student information.
+
+![Add Student Data](screenshots/student-data1.png)
+
+## **List Student Data**
+
+- The program can list and display student data from the Google Sheets worksheet.
+- Accordingly, the student's name, surname, course, and average exam 
+scores are reflected on the screen.
+- The system automatically calculates the student's status (Pass/Fail) based on their exam scores.
+
+![List Student Data](screenshots/list-student-data.png)
+
+### **Google Sheets Integration**
+
+Utilizes Google Sheets API for data storage and retrieval.
+
+### **Validated Input** 
+
+Input validation ensures correct data entry, prompting users when invalid input is provided.
+
+### **Flexible Lesson Selection**
+
+Users can select from a list of predefined lessons: English, Science, Math, and History.
+
+### **Feedback and Error Handling**
+
+The program provides feedback on successful data entry and error messages for invalid inputs.
+
+### **Exit**
+
+Users can exit the program at any time.
+
 
 
 
