@@ -157,6 +157,15 @@ I have used several technologies that have enabled this design to work:
 
 I have written my testing in a different file for both during-development and post-development called [TESTING.md](TESTING.md).
 
+# **Libraries**
+
+For this project to function, I imported the following libraries:
+
+- gspread: Used for accessing Google Sheets API.
+- google-auth: Provides authentication credentials for accessing Google APIs.
+
+
+
 
         
 
