@@ -107,21 +107,21 @@ Users can exit the program at any time.
 
 # **Future-Enhancements**
 
-Here are some potential improvements and features that could be added to enhance the functionality of the program:
+Here are some potential improvements and features that I could add to enhance the functionality of the program:
 
-- **User Authentication**: Implement user authentication to ensure only authorized users can access and modify student data.
+- **User Authentication**: I can implement user authentication to ensure only authorized users can access and modify student data.
   
-- **Search and Filter**: Add functionality to search for specific students or filter students by criteria such as lesson, score, or status.
+- **Search and Filter**: I can add functionality to search for specific students or filter students by criteria such as lesson, score, or status.
 
-- **Update and Delete**: Include options to update and delete student records directly from the program interface.
+- **Update and Delete**: I can include options to update and delete student records directly from the program interface.
 
-- **Data Visualization**: Integrate data visualization tools to create charts and graphs for better data analysis and insights.
+- **Data Visualization**: I can integrate data visualization tools to create charts and graphs for better data analysis and insights.
 
-- **Email Notifications**: Send automated email notifications to teachers or administrators for important events, such as new student entries or low scores.
+- **Email Notifications**: I can send automated email notifications to teachers or administrators for important events, such as new student entries or low scores.
 
-- **CSV Import/Export**: Allow users to import student data from CSV files and export data to CSV for easy sharing and backup.
+- **CSV Import/Export**: I can allow users to import student data from CSV files and export data to CSV for easy sharing and backup.
 
-- **Mobile App**: Develop a mobile app version of the program for convenient access on smartphones and tablets.
+- **Mobile App**: I can develop a mobile app version of the program for convenient access on smartphones and tablets.
 
 These enhancements could make the program more versatile, user-friendly, and efficient for managing student data.
 
