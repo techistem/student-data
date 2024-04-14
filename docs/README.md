@@ -60,7 +60,7 @@ the student data recording system.
 This Python program allows users to manage and record student data using Google Sheets.
 The features included in this programme are listed in the main menu and they can be seen below:
 
-![Main Menu](screenshots/student-data-welcome-screen.png)
+![Main Menu](screenshots/student-data-main-menu.png)
 
 ## **Add student data:**
 
