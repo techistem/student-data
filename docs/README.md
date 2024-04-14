@@ -228,7 +228,7 @@ to backup your work.
 5. In the terminal type 'git clone' & then paste the link you copied in GitHub
 6. Press enter and your local clone will be created.
 
-# **Cedits**
+# **Credits**
 
 - [Google Sheets API](https://developers.google.com/sheets/api/guides/concepts) Utilizes for storing and retrieving student data.
 - [lucidchart.com](https://www.lucidchart.com/pages/) was used to create the programme flow chart "student-data-flowchart.png"
@@ -238,6 +238,11 @@ for teaching me Python to begin with.
 community for helping me find bugs and issues.
 [Python tips book](https://book.pythontips.com/en/latest/) helped me gain knowledge about Python I otherwise would not have obtained.
 - [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/) It was used when fixing errors in Python codes.
+
+# **Acknowledgements**
+
+I would like to thank my course mentor Tim Nelson, for his support and guidance throughout the course of the project 
+and my peer Ilyascan Olgun for their support & feedback.
 
 
 
