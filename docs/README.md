@@ -125,6 +125,36 @@ Here are some potential improvements and features that I could add to enhance th
 
 These enhancements could make the program more versatile, user-friendly, and efficient for managing student data.
 
+# **Technologies Used**
+
+I have used several technologies that have enabled this design to work:
+
+-[Python](https://www.python.org/)
+- The entirety of the code in this application is composed using Python as the fundamental programming language, ensuring its complete functionality.
+    - In addition to core Python I have used the following Python modules:
+        - [Gspread](https://docs.gspread.org/en/latest/)
+            - Used to access my google sheets document throughout the application, to access and edit data.
+        - [Google Auth](https://google-auth.readthedocs.io/en/master/)
+            - Used to provide access to the application to interact with my google sheet.
+- [GitHub](https://github.com/)
+    - Used to store code for the project after being pushed.
+- [Git](https://git-scm.com/)
+    - Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+- [Gitpod](https://www.gitpod.io/)
+    - Used as the development environment.
+- [Heroku](https://dashboard.heroku.com/apps)
+    - Used to deploy my application.
+- [Lucid](https://lucid.app/documents#/dashboard)
+    - Used to create the flowchart for the project.
+- [Grammarly](https://www.grammarly.com/)
+    - Used to fix the grammar errors across the project.
+- [Google Sheets](https://www.google.co.uk/sheets/about/)
+    - Used to store the 'Contacts' data used for the application.
+- [Pep8](https://pep8ci.herokuapp.com/)
+    - Used to test my code for any issues or errors.
+        
+
+
 
 
 
