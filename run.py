@@ -43,8 +43,7 @@ def user_parameter():
             break
         else:
             print(
-                f"{student_name} is invalid. Please use only
-                letters and must be longer than 1 character.")
+                f"{student_name} is invalid. Please use only letters and must be longer than 1 character.")
 
     while True:
         student_surname = input("Enter Student Surname: ")
@@ -52,8 +51,7 @@ def user_parameter():
             break
         else:
             print(
-                f"{student_surname} is invalid. Please use only letters and
-                must be longer than 1 character..")
+                f"{student_surname} is invalid. Please use only letters and must be longer than 1 character..")
 
     print("Select a lesson : ")
     student_lesson = [
@@ -71,13 +69,10 @@ def user_parameter():
         if user_input.isdigit():
             selected_index = int(user_input) - 1
         if 0 <= selected_index < len(student_lesson):
-            break
-            else:
-                print(
-                  "Invalid lesson number.Please enter a valid lesson number.")
+            break 
         else:
-            print("Invalid input. Please enter a valid lesson number.")
-
+            print(
+                "Invalid lesson number.Please enter a valid lesson number.")
     while True:
         student_exam_score_one = input("Enter Exam Score One:")
         if student_exam_score_one.isdigit():
